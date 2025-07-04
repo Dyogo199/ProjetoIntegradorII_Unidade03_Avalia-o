@@ -1,49 +1,64 @@
-Sistema de Gestão de Biblioteca Universitária
-Este projeto apresenta o desenvolvimento de um modelo de banco de dados relacional para uma biblioteca universitária, com o objetivo de proporcionar controle eficiente do acervo, empréstimos, reservas e multas. A solução foi concebida seguindo boas práticas de modelagem, normalização e segurança de dados, utilizando o MySQL como SGBD e Git para controle de versão.
+📚 Sistema de Gestão de Biblioteca Universitária
+Bem-vindo ao repositório do Sistema de Gestão de Biblioteca Universitária! Este projeto propõe uma solução robusta, escalável e moderna para o gerenciamento de acervo, usuários, empréstimos, reservas e multas em ambientes acadêmicos.
 
-Visão Geral
-O sistema contempla as necessidades básicas e avançadas de uma biblioteca acadêmica, permitindo o registro e a gestão de usuários, livros, reservas, empréstimos e eventuais penalidades (multas). O controle do fluxo de informações garante rastreabilidade, organização e facilidade na geração de relatórios ou integração com sistemas futuros.
+✨ Visão Geral
+O sistema foi cuidadosamente modelado e implementado em MySQL, incorporando os princípios de integridade, segurança e normalização de dados. O uso do Git assegura um desenvolvimento colaborativo, seguro e transparente, com histórico completo de alterações e versionamento eficiente.
 
-Estrutura do Projeto
-Banco de Dados Relacional: Modelagem baseada em entidades como Usuário, Livro, Empréstimo, Reserva e Multa.
+🏗️ Estrutura do Projeto
+Modelagem Relacional Completa: Entidades essenciais como Usuário, Livro, Empréstimo, Reserva e Multa, refletindo as demandas de uma biblioteca universitária.
 
-Integridade Referencial: Utilização de chaves primárias e estrangeiras para garantir integridade dos dados.
+Integridade e Automação: Chaves primárias/estrangeiras e regras automatizadas (triggers) para atualização do status dos livros.
 
-Automação de Processos: Trigger para atualização automática do status dos livros após devolução.
+Scripts Organizados: Diretórios separados para scripts SQL, documentação e diagramas.
 
-Controle de Versão: Gerenciamento do projeto por meio do Git, com organização dos scripts SQL e documentação em diferentes branches e commits descritivos.
+Documentação Clara: Este README e demais documentos facilitam o entendimento e a expansão do projeto.
 
-Funcionalidades Principais
-Cadastro e gestão de usuários com tipos diferenciados (aluno, professor, visitante).
+⚙️ Funcionalidades
+Cadastro e classificação de usuários (aluno, professor, visitante).
 
-Controle do acervo de livros com status de disponibilidade.
+Controle detalhado do acervo de livros, com status de disponibilidade e histórico de circulação.
 
-Registro de empréstimos e devoluções com acompanhamento de prazos.
+Gerenciamento completo de empréstimos e devoluções, com prazos e acompanhamento.
 
-Sistema de reservas e gerenciamento de fila.
+Sistema de reservas, com fila e controle de prioridade.
 
-Aplicação e controle de multas por atraso na devolução.
+Cálculo e registro automático de multas por atraso.
 
-Consultas para acompanhamento do uso da biblioteca.
+Consultas avançadas para administração e geração de relatórios.
 
-Como Utilizar
-Clone este repositório e acesse os scripts SQL disponíveis na pasta /sql.
+🚀 Como Utilizar
+Clone o repositório:
+git clone https://github.com/seuusuario/projeto-biblioteca-bd.git
 
-Importe ou execute os scripts no seu servidor MySQL (preferencialmente versão 8.0 ou superior).
+Importe os scripts SQL na sua instância MySQL (8.0+ recomendado).
 
-Siga as orientações do manual do projeto para testar as operações de inserção, atualização, remoção e consultas.
+Execute operações CRUD (inserção, consulta, atualização e remoção) de acordo com as orientações nos scripts e na documentação.
 
-Utilize o controle de versão para registrar melhorias, correções ou novas funcionalidades, mantendo o histórico organizado e transparente.
+Versione suas alterações utilizando as melhores práticas do Git, com commits claros e organização em branches.
 
-Estrutura Recomendada
-/sql – Scripts de criação, inserção e manipulação do banco de dados.
+🗂️ Estrutura Recomendada de Pastas
+pgsql
+Copiar
+Editar
+📁 sql/       → Scripts SQL de criação, inserção e manipulação.
+📁 docs/      → Diagramas ER, modelos e documentação técnica.
+📄 README.md  → Visão geral e instruções do projeto.
+🤝 Contribuição
+Contribuições são muito bem-vindas!
+Siga estas diretrizes:
 
-/docs – Diagramas ER, documentação técnica e modelos de dados.
+Crie branchs descritivas para novas features.
 
-README.md – Manual do projeto, orientações e visão geral.
+Envie pull requests detalhados.
 
-Contribuição
-Contribuições são bem-vindas! Para colaborar, utilize pull requests, commits claros e abertos a revisão. Dúvidas e sugestões podem ser encaminhadas por issues ou pelo canal institucional.
+Mantenha as mensagens de commit claras e objetivas.
 
-Licença
-Este projeto está sob a licença Creative Commons Attribution 4.0 International (CC BY 4.0).
+Consulte os diagramas e documentação antes de propor alterações estruturais.
+
+📄 Licença
+Licenciado sob Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+💡 Sobre
+Este projeto faz parte do desenvolvimento acadêmico em Banco de Dados e Controle de Versão, e pode ser expandido para aplicações reais em bibliotecas universitárias.
+Para dúvidas, sugestões ou colaboração, utilize as issues do repositório ou entre em contato via e-mail institucional.
+
